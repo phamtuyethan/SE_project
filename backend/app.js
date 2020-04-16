@@ -45,7 +45,7 @@ app.use((error, req, res, next) => {
 
 const MONGODB_URI ="mongodb+srv://admin1:test1@freecluster-fzbw7.mongodb.net/test?retryWrites=true&w=majority"
 mongoose
-    .connect(MONGODB_URI)
+    .connect(MONGODB_URI, {useUnifiedTopology: true, useNewUrlParser: true})
     .then(result => {
         app.listen(7000);
         console.log("connected to the sever");
