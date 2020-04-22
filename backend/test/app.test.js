@@ -28,7 +28,7 @@ var user = {
 
 // Item must exists to add in the cart
 var newItemInCart = {
-    "product"   : "5e88d3f5dccd984b4cff1d36",
+    "product"   : "5e9e0cb971ce8b7518add2b5",
     "quantity"  : "1",
     "cartId"    : "5e88d3f5dccd984b4cfdfd36"
 };
@@ -259,7 +259,7 @@ describe ('authentication' ,function() {
 
         it ('should fetch a single product', function(done) {
             request(app)
-                .get('/products/show-product/5e88d3f5dccd984b4cff1d37')
+                .get('/products/show-product/5e9e0cb971ce8b7518add2b5')
                 .expect(200)
                 .then(res => {
                     console.log("______________________________________");
